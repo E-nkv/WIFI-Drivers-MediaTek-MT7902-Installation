@@ -93,3 +93,5 @@ If you update your system and WiFi disappears, it means your kernel updated. You
 ## Final Words
 
 If this helped, leave a **star**! Keep this repo handy—it’s your best friend until you finally swap that card or get a dongle! 🫡.
+
+##Edit 2: The script has been working perfectly for me (on archlinux) this whole time, and every now and then after updating the system (`sudo pacman -Syu`) i lose WiFi connectivity, share connection from my phone via USB, re-run it (taking about 2 minutes) and WiFi is ready 🤓.
