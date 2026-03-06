@@ -12,12 +12,14 @@ I currently own an **Acer Aspire 3 15** laptop which comes with the **MT7902 Wir
 - I installed **Arch Linux** and finally got it working using [hmtheboy154's repository](https://github.com/hmtheboy154/gen4-mt7902.git).
 - I finally have WiFi without a dongle, but I've documented exactly which OSs will work and which will fail to save you the headache. I also tried the script on some Distros for accuracy (and just testing out their differences). Specifically, I have tested on: Ubuntu, Pop!\_OS, Fedora, Zorin, Linux Mint, and Arch Linux. See below for which worked:
 
-# 🚦 Compatibility Matrix
+#  ITS ONLY TEMPORARY
+Kernel maintainers are removing gradually all support for the legacy WEXT API that these drivers rely on. So it's a matter of time til one day this script 'no longer works'. Personally I hope some other alternative appears in the open source community by then. 
 
+# 🚦 Compatibility Matrix
 | OS Status    | Distributions                                                                                                                                    | Why?                                                                                                 |
 | :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| **✅ WORKS** | **Arch Linux**, **Zorin OS 17.x**, **Pop!\_OS 22.04**                                                                                            | These distros use kernels that still include the `WEXT` API needed by the driver.                    |
-| **❌ FAILS** | **Fedora**, **Ubuntu**, **Zorin OS 18**, and probably all other distros without the Legacy WEXT api (appearing on kernel versions 6.13 or lower) | These versions have stripped the legacy wireless code from the kernel. The driver will fail to link. |
+| **✅ WORKS** | **Arch Linux**, **Zorin OS 17.x**,                                                                                            | These distros use kernels that still include the `WEXT` API needed by the driver.                    |
+| **❌ FAILS** | **Fedora**, **Ubuntu**, **Zorin OS 18**, **Pop!\_OS 22.04**, and probably all other distros without the Legacy WEXT api (appearing on kernel versions 6.13 or lower) | These versions have stripped the legacy wireless code from the kernel. The driver will fail to link. |
 
 # Alternatives
 
